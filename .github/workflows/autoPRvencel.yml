@@ -1,4 +1,5 @@
-name: Create auto pull request
+name: auto PR from main to vencel
+
 on:
   push:
     branches:
