@@ -1,4 +1,4 @@
-name: auto PR from main to vencel
+name: auto PR from main to zaur
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: vencel
+          ref: zaur
       - name: Reset promotion branch
         run: |
           git fetch origin main:main
@@ -18,4 +18,4 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: vencel-promotion
+          branch: zaur-promotion
